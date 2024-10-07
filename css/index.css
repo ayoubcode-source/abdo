@@ -18,13 +18,14 @@ body{
 }
 
 .navbar{
-    background-image: url(../img/white.jpg);
+    background-color: white;
     height: 80px;
     color: #272727;
     position: fixed !important;
     top: 0;
     width: 100%;
     z-index: 1000;
+    transition:  .4s;
 }
 
 
@@ -34,6 +35,10 @@ body{
     font-weight: 500;
     margin-left: 100px;
 }
+.nav-elements{
+
+}
+
 #nav-elements .textcolor{
     color: white;
 }
@@ -378,11 +383,42 @@ form .msg:focus{
 @media screen and ( max-width: 600px)
 
 {
+    .navbar.active{
+        background-color: white;
+        height: 300px;
+        color: #272727;
+        position: fixed !important;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .navbar.active .navbar-header{
+        display: none;
+    }
+    /* .navbar-header{
+        display: ;
+    }
+     */
+    
+    .navbar ul{
+        width: 40%;
+        height: 100%;
+    }
+    
+    #nav-elements li{
+        margin-bottom: 20px;
+    
+    }
+    
     #bar-3{
         display: block;
     }
     #nav-elements{
         display: none;
+    }
+    .navbar.active #nav-elements{
+        display: block;
     }
 
     .first-section{

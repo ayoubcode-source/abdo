@@ -21,4 +21,12 @@
 let menubar = document.getElementById('bar-3')
 console.log(menubar)
 
+let navbar = document.querySelector('.navbar')
+let navbarheader = document.querySelector('.navbar-header')
+
+ menubar.onclick = function () {
+    navbar.classList.toggle('active')
+    console.log(navbar)
+ }
+
 

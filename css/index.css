@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Noto Kufi Arabic", sans-serif;
+
+}
+
+body{
+    overflow-X: hidden;
+}
+
+.navbar{
+    background-image: url(../img/white.jpg);
+    height: 80px;
+    color: #272727;
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+
+
+#nav-elements{
+    font-weight: 500;
+    margin-left: 100px;
+}
+#nav-elements .textcolor{
+    color: white;
+}
+#nav-elements a{
+    position: relative;
+
+}
+#nav-elements a::before{
+    position: absolute;
+    content: '';
+    border-bottom: #272727;
+    width: 0%;
+    right: 0;
+    bottom: -10px;
+    height: 3px;
+    background-color: #272727;
+    transition: all .2s;
+}
+
+#nav-elements a:hover::before{
+    width: 100%;
+}
+
+
+
+
+
+.navbar a{
+    color: #272727;
+    transition: .2s;
+}
+
+.navbar a:hover{
+    text-decoration: none;
+    color: #272727;
+}
+
+
+
+.navbar-header{
+    width: 40%;
+    text-align: start;
+
+}
+
+
+.navbar ul{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#bar-3{
+    width: 10%;
+    font-size: 20px;
+    display: flex;
+    justify-content: end;
+    display: none;
+
+}
+
+
+
+
+
+
+.first-section{
+    margin-top: 80px;
+    background-image: url(../img/office.jpg);
+    width: 100%;
+    background-size:cover ;
+    background-position: bottom;
+    background-color: #6d5959;
+    height: 37rem;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.first-section .container-slide{
+    position: absolute;
+    height: 100%;
+    width: 23rem;
+    right: 80px;
+    background-color: rgb(39, 39, 39,0.5);
+    z-index: 1;
+}
+
+.first-section h1 {
+    margin-bottom: 20px;
+    line-height: 1.5;
+
+}
+.first-section h1 span {
+color: rgb(50, 50, 50);
+
+}
+.first-section h6 {
+color: #272727;
+}
+
+.first-section .title{
+    text-align: end;
+    margin: 200px 100px;
+    z-index: 2;
+    color: whitesmoke;
+}
+
+
+.about-us{
+    padding: 0px 30px;
+    position: relative;
+    width: 100%;
+    background-color: whitesmoke;
+    height: 18rem;
+    border-radius: 20px;
+}
+
+
+.about-us #container{
+    width: 90%;
+    height: 26rem;
+    background-color: whitesmoke;
+    /* box-shadow: 0px 0px 5px 2px rgb(75, 45, 45); */
+    margin: 0;
+    position: absolute;
+    left: 5%;
+    top: -6rem;
+    z-index: 2;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: end;
+    display: grid;
+    grid-template-columns: 50% 10% 40%;
+    color: black;
+
+}
+
+
+
+
+#container .img{
+    height: 100%;
+    width: 50%;
+}
+
+#container .prfl-pic{
+    height: 22rem;
+    width: 20rem;
+    object-position: center 10%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-us .footer h5{
+    margin-top: 50px;
+}
+
+#container p{
+    line-height: 2;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#container .signature{
+    height: 5rem;
+    width: 10rem;
+    width: 50%;
+}
+
+.second-section{
+    width: 100%;
+    height: 40rem;
+    background-image: url(../img/table.JPG);
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+
+
+#practice-areas{
+    padding: 0 60px;
+    padding-top: 100px;
+}
+
+#practice-areas .content{
+    height: 37rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+}
+
+#practice-areas h1{
+    margin-bottom: 50px;
+}
+
+#practice-areas .card{
+    height: 25rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+#practice-areas h1{
+    width: 100%;
+    text-align: center;
+}
+
+.card:hover{
+    scale: 1.03;
+}
+
+.card-body{
+    padding: 0;
+    margin: 0;
+    flex: none !important;
+    line-height: 1.7;
+    height: 12rem;
+}
+
+.card img{
+    height:  4rem;
+    color: #6e6020;
+}
+
+.learn-more{
+    color: gray;
+    font-size: 14px;
+    text-decoration: underline;
+}
+/* .learn-more1{
+    height: 20px;
+    background-color: aquamarine;
+} */
+
+.learn-more:hover{
+    color: #272727;
+}
+
+
+#practice-areas .card-header{
+    border: none;
+    background-color: transparent;
+}
+
+
+
+.contact-us{
+    margin-top: 100px;
+    height: 40rem;
+    width: 100%;
+    background-color: #6e6020;
+    text-align: center;
+    padding: 100px 100px;
+
+}
+
+.contact-us .title{
+    width: 100%;
+    
+}
+.contact-us .title h1{
+    margin-bottom: 30px;
+    color: white;
+}
+
+.contact-us input{
+    border: 1px gray solid;
+    outline: none;
+    padding: 5px 10px;
+    width: 20rem;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: all .2s;
+}
+
+.contact-us input:focus{
+    border: 1px solid #272727;
+    box-shadow: 0px 0px 5px 1px rgba(31, 31, 31, 0.8);
+}
+
+.contact-us .contact-form{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .contact-us form{
+    text-align: end;
+
+} */
+
+form div{
+    margin-bottom: 20px;
+}
+
+form button{
+    width: 100%;
+    height: 60px;
+    color: white;
+    background-color: #272727;
+}
+
+
+form button:hover{
+    background-color: rgb(39, 39, 39,0.9);
+}
+
+
+
+form .msg{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 13px;
+    outline: none;
+    transition: all .2s;
+    border-radius: 5px;
+}
+
+form .msg:focus{
+    border: 1px solid #272727;
+    box-shadow: 0px 0px 5px 1px rgba(31, 31, 31, 0.8);
+    scale: 1.05;
+}
+
+@media screen and ( max-width: 600px)
+
+{
+    #bar-3{
+        display: block;
+    }
+    #nav-elements{
+        display: none;
+    }
+
+    .first-section{
+        background-size:cover ;
+        background-image: url(../img/office.jpg);
+        background-position: bottom;
+        background-color: #6d5959;
+        width: 100vw;
+        height: 37rem;
+        display: flex;
+        justify-content: end;
+        position: relative;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .first-section h6 {
+         display: none;
+    
+    }
+    #nav-elements{
+        font-weight: 500;
+        margin-left: 0;
+    }
+
+    .first-section h1 {
+        width: 100%;
+        margin-bottom: 20px;
+        line-height: 1.5;
+        font-size: 23px;
+    
+    }
+    .first-section h1 span {
+    color: rgb(206, 206, 206);
+    
+    }
+    .first-section h6 {
+    color: #272727;
+    }
+
+    .about-us #container{
+        width: 90%;
+        height: 38.5rem;
+        background-color: whitesmoke;
+        /* box-shadow: 0px 0px 5px 2px rgb(75, 45, 45); */
+        margin: 0;
+        position: absolute;
+        left: 5%;
+        top: -6rem;
+        z-index: 2;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: end;
+        display: grid;
+        grid-template-columns: 1fr;
+        color: black;
+        grid-template-areas: "first-row"
+        "second-row";
+        justify-items: center;
+    
+    }
+    #container h1{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #container p{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #container h5{
+        font-size: 16px;
+    }
+    
+    
+    
+    
+    #container .img{
+        height: 100%;
+        width: 50%;
+        grid-area: first-row;
+    }
+    
+    #container .prfl-pic{
+        height: 13rem;
+        width: 13rem;
+        margin-bottom: 20px;
+        object-position: center 10%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .second-section{
+        width: 100%;
+        margin-top: 100px;
+        height: 40rem;
+        background-image: url(../img/reunion.JPG);
+        background-position: center;
+        background-size: cover;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    
+    }
+
+
+
+    #practice-areas{
+        padding: 0 30px;
+        padding-top: 100px;
+    }
+    
+    #practice-areas .content{
+        height: 77rem;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+    }
+    
+    #practice-areas h1{
+        margin-bottom: 50px;
+    }
+
+
+    .contact-us{
+        margin-top: 100px;
+        height: 55rem;
+        width: 100%;
+        background-color: #6e6020;
+        text-align: center;
+        padding: 100px 100px;
+    
+    }
+
+
+    .contact-us input{
+        border: 1px gray solid;
+        outline: none;
+        padding: 5px 10px;
+        width: 20rem;
+        height: 60px;
+        border-radius: 5px;
+        font-size: 13px;
+        transition: all .2s;
+        margin-bottom: 20px;
+    }
+
+    .contact-us h1{
+        font-size: 30px;
+    }
+    
+    .contact-us h6{
+        font-size: 13px;
+    }
+    
+
+    .first-section .title{
+        text-align: end;
+        margin: 200px 100px;
+        z-index: 2;
+        color: whitesmoke;
+        width: 10rem;
+    }
+}
